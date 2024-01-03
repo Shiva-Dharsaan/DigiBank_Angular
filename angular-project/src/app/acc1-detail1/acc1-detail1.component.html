@@ -1,0 +1,63 @@
+<!--<div class="header">
+    <h2>    
+    Account Detail
+    </h2>
+    <a href="" class="home-icon" style="color: #000000;">&#8962;</a>
+</div>
+<form class="container">
+    <div *ngFor = "let acc of accounts" style="padding: 10px;">
+        <div class="box" *ngIf="acc.customerId==1">
+            <form class="c1" *ngIf="acc.accId==this.accId">
+                <form class="f1">
+                    <h2 style="text-align: center;">{{ acc.accountType}}</h2>
+                    Name : {{acc.cardHolderName}}<br>
+                    Account Number: {{acc.accountNumber }} <br>
+                    Branch: {{acc.Branch}}<br>
+                    IFSC Code:{{acc.IFSC}}<br>
+                    Currency:{{acc.dollar}} <br>
+                    Status: {{acc.Status}} <br>
+                    Bank Balance :{{ acc.balance }}<br><br>
+                    <button>Transcation</button><div> </div>
+                    <button>Transcation History</button>
+                </form>
+            </form> 
+        </div>
+    </div>
+</form>
+<router-outlet ></router-outlet>-->
+<header>
+    <h2 style="color: white;">Account Details</h2>
+    <div class="header-buttons">
+        <button (click)="accSummary(accounts[0].customerId)">Account Summary</button>
+        <button (click)="transac()">Transfer</button><div> </div><br>
+        <button (click)="thistory()">Transaction History</button>
+        <button (click)="logout()">LogOut</button>
+    </div>
+</header>
+<!--
+<div class="header">
+    <h2>Account Detail</h2>
+    <br><br><br>
+    <button (click)="accSummary(accounts[0].customerId)">Account Summary</button>
+    <button (click)="transac()">Transfer</button><div> </div><br>
+    <button (click)="thistory()">Transaction History</button>
+    <a href="" class="home-icon" style="color: #000000;">&#8962;</a>
+</div>-->
+<div class="container" id="container">
+    <div class="c1" *ngFor="let acc of accounts" style="padding: 10px;">
+            <div class="inner">
+                    <h2 style="text-align: center;">{{ acc.accountType}}</h2>
+            </div>
+                    <br><br>     
+                    <p>&nbsp; &nbsp; Name : {{acc.cardHolderName}}</p><br>
+                    <p>&nbsp; &nbsp; Account Number : {{acc.accountNumber}}</p> <br>
+                    <p>&nbsp; &nbsp; Branch : {{acc.Branch}}</p><br>
+                    <p>&nbsp; &nbsp; IFSC Code : {{acc.IFSC}}</p><br>
+                    <p>&nbsp; &nbsp; Currency : {{curr[0].currency}} </p><br>
+                    <p>&nbsp; &nbsp; Status : {{acc.Status}} </p><br>
+                    <p>&nbsp; &nbsp; Bank Balance : {{curr[0].CODE}} {{ acc.balance }}</p> <br><br>
+                  
+        </div>
+    </div>
+
+<router-outlet></router-outlet>

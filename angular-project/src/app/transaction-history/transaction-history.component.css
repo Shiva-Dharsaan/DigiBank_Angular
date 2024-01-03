@@ -1,0 +1,157 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.section-title {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-header th {
+    background-color: #f2f2f2;
+    width: 150px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+}
+
+.table-body td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.table-body tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect for table rows */
+.table-body tr:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease-in-out;
+}
+/* app.component.css */
+
+.transaction-history-header {
+    background-color: #007bff;      /* Set the background color to your preferred color */
+    color: #ffffff;                 /* Set the text color to white or a contrasting color */
+    padding: 20px;                  /* Add padding for spacing */
+    text-align: center;             /* Center-align text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow */
+  }
+  
+  .transaction-history-header h2 {
+    margin: 0;                      /* Remove default margin for h2 */
+  }
+  
+  .transaction-history-header p {
+    margin-top: 5px;                /* Add a small margin above the paragraph */
+    font-style: italic;             /* Apply italic style to the paragraph */
+  }
+  
+  /* Add additional styles as needed */
+  .green-text {
+    color: rgb(255, 255, 255);
+    color: green;
+  }
+.red-text {
+    color: rgb(255, 255, 255);
+    color:red
+  }
+  /* Add these styles to your CSS file or style section */
+
+  .header {
+    background-color: #0a192f; /* Dark blue background */
+    color: #fff; /* Text color */
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 40%;
+    height: 10%;
+    width: 60%;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+    cursor: pointer;
+  }
+  
+  .header:hover {
+    background-color: #1d3557; /* Darker blue on hover */
+  }
+  header {
+    background-color:rgb(0, 80, 112);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-buttons {
+    display: flex;
+  }
+  .header-buttons button {
+    margin-left: 10px;
+    background-color: #4CAF50;;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .header-buttons button:hover {
+    background-color:red;
+  }
+  .filter-section {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  /* Optional: Add hover effect */
+  select:hover {
+    border-color: #3498db;
+  }
+  
+  /* Optional: Style the selected option */
+  select option:checked {
+    background-color: #3498db;
+    color: #fff;
+  }
+  .data-table{
+    background-color:rgb(192, 222, 232);
+  }
+  /* Optional: Add space between the two filters */
+  
+  

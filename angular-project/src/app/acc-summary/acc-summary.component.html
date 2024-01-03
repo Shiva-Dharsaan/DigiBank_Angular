@@ -1,0 +1,21 @@
+
+<header>
+    <h2 style="color: white; font-size: 40px;">Account Summary </h2>
+    <div class="header-buttons">
+        <button (click)="logout()">Log Out</button>
+        &nbsp; &nbsp; <a href="" class="home-icon" style="color: #000000;">&#8962;</a>
+    </div>
+</header>
+<div   *ngFor = "let acc of bankAccounts" >
+   <!--<div class="box" *ngIf="acc.cardHolderName===this.username">   -->
+    <div class="image1" id="image1" *ngIf="acc.accountType==='Savings Account'"></div>
+            <form class="container" id="container">
+                <h1 >{{ acc.accountType}}</h1><br>
+                <p style="font: size 1.2em;">Account Number: <a routerLink="/acc1Detail1/{{acc.accId}}">{{ acc.accountNumber }}</a></p> <br>  
+                <p style="font: size 1.2em;">Bank Balance : {{curr[0].CODE}} {{ acc.balance }}</p><br><br>
+                <!-- <button (click)="gotoAccountDetails(acc.accId)">Account Details</button> -->
+            </form><br>
+        
+</div>
+
+<router-outlet></router-outlet>

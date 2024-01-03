@@ -1,0 +1,57 @@
+<header>
+    <h2 style="color: white;">Transfer</h2>
+    <div class="header-buttons">
+        <button (click)="accDetails(accountDetails[0].accId)">Account Details</button>
+        <button (click)="accSummary(accountDetails[0].customerId)">Account Summary</button>
+        <button (click)="thistory()">Transaction History</button>
+        <button (click)="logout()">Logout</button>
+    </div>
+</header>
+<div class="container" id="container">
+    <div *ngFor="let acc of accountDetails" style="padding: 10px;">
+        
+     <div  style="padding: 10px;">
+            <div class="bank-accounts" > 
+                <form class="one">
+                    <div class="image1" id="image1"><br><br><br></div>
+                     <b>Account Number : </b><br>{{acc.accId}}<br>
+                </form>
+                <form class="one">
+                    <div class="image2" id="image2"><br><br></div>
+                    <b>Account Type :</b><br>{{acc.accountType}}
+                </form>
+                <form class="one">
+                    <div class="image3" id="image3"><br><br><br></div>
+                    <b>Balance Amount: </b><br>{{curr[0].CODE}}{{acc.balance}}<br>    
+                </form>    
+            </div>
+        </div> 
+    </div>
+    
+
+<div  style="padding: 10px;">
+    <div class="detail" >
+        <div class="c1">
+            <br>
+            <form class="inner">
+                <br> 
+                <label for="name" style="font-size:18px;">Recipient Name:</label><br>
+                <input type="text" id="name" name="name" [(ngModel)]="recipientName" style=" width: 200px;height: 20px; font-size: 1.2em;"required><br><br>
+                <!--<label for="recipient" style="font-size:18px;">Recipient Account Number:</label><br>
+                <input type="text" id="recipient" name="recipient" [(ngModel)]="recipientAccount" style="width: 200px;height: 20px;" required><br><br>-->
+                <label for="recipientAccount"  style="font-size: 18px;">Receiver Account:</label>
+                <select (click)="loadRecipientAccounts()" id="recipient" name="recipient" [(ngModel)]="recipientAccount" style="width: 200px;height: 30px;" required >
+                <option [value]="account.accId" *ngFor="let account of scrollAccounts">{{ account.accId }}</option>
+                </select><br><br>
+                <label for="ifsc" style="font-size:18px;">IFSC Code:</label><br>
+                <input type="text" id="ifsc" name="ifsc" [(ngModel)]="ifscCode" style="width: 200px;height: 20px;font-size: 1.2em;" required><br><br>
+               
+                <label for="amount" style="font-size:18px;">Amount:</label><br>
+                <input type="number" id="amount" name="amount" [(ngModel)]="transferAmount" style="width: 200px;height: 20px;font-size: 1.2em;"required><br><br>
+                <br>
+                <button (click)="transferFund()"> Transfer</button><br><br>
+                <div class="error-message" *ngIf="message">{{ message }}</div><br><br>
+            </form>              
+        </div>
+    </div>
+</div> 

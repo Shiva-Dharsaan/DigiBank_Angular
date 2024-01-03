@@ -1,0 +1,206 @@
+/*.login-container {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10%;
+  opacity: 0.7;
+  transition: box-shadow 0.3s ease;
+}
+.login-container:hover {
+  box-shadow: 0 0 15px rgba(18, 17, 17, 0.5); /* Change the box-shadow color on hover 
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: rgb(1, 63, 87);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.status {
+  color: rgb(12, 1, 1);
+  margin-top: 10px;
+}
+*/
+/*
+container {
+  width: 70%;
+  height:100%;
+  background-image: url('https://www.shutterstock.com/image-photo/business-office-building-lobby-blur-260nw-748798912.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 10%;
+  padding-bottom: 9%;
+  padding-top: 8%;
+  padding-right: 20%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(27, 26, 26, 0.1);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+}
+*/
+.container{
+    
+  background-image: url('https://fintechnews.sg/wp-content/uploads/2023/05/How-Much-Does-It-Cost-to-Launch-a-Digital-Bank-in-ASEAN.png');
+  /* background-size: cover; */
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  height: 700px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8; /* Light gray background color */
+  padding: 20px;
+  margin-left: 38%; /* Adjusted margin for better alignment */
+  opacity: 0.9;
+  height:200px;
+  margin-top: 15%;
+  margin-bottom: 2%;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+  transition: transform 0.3s ease-in-out;
+  cursor:pointer;
+  font-size: 16px;
+} 
+
+form:hover {
+  box-shadow: grey; /* Enhanced box-shadow on hover */
+  transform: translateY(-10px);
+}
+
+/* Add some styles for form elements like inputs and labels */
+form label {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Light border for input fields */
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+form button {
+  background-color: #005070; /* Dark blue-green button color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for button color */
+
+  /* Add box shadow for a subtle lift effect */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  height:50px;
+  width: 80px;
+  font-size: 15px;
+}
+
+form button:hover {
+  background-color: #003546; /* Darker shade on hover */
+}
+
+form h2 {
+  font-size: 2em;
+  color: #005070; /* Dark blue-green text color */
+  margin-bottom: 15px;
+}
+
+form p {
+  font-size: 1.6em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.error-message
+{
+  font-size: 1.4em;
+  color: red;
+}
+h1 {
+  color: grey; /* Set a dark, attractive text color */
+  font-size: 24px; /* Increase the font size for emphasis */
+  font-weight: bold; /* Set the font weight to bold */
+  margin-bottom: 20px; /* Add more bottom margin for spacing */
+  text-align: center; /* Center-align the text */
+  text-transform: uppercase; /* Convert text to uppercase for a stylish look */
+  letter-spacing: 2px; /* Add some letter spacing for clarity */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow for depth */
+  transition: color 0.3s ease-in-out; /* Add a smooth color transition effect */
+}
+
+/* Add a hover effect to change color on hover */
+h1:hover {
+  color:#2c3e50; /* Change the text color on hover */
+}
+
+.error-popup {
+  position: fixed;
+  top: 10px; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  background-color:red;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+button {
+  margin-top: 10px;
+}

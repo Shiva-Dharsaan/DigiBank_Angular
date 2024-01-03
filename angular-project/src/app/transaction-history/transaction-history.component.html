@@ -1,0 +1,124 @@
+
+<header>
+  <h2 style="color: white;">Transaction History</h2>
+  <div class="header-buttons">
+    <button (click)="accDetails(transactions2[0].accId)">Account Details</button>
+    <button (click)="logout()">Logout</button>
+      
+  </div>
+</header>
+<br><br>
+<div class="filter-section">
+    <label for="filter"><b>Filter by:</b></label>
+    <select id="filter" [(ngModel)]="filter" (change)="applyFilter()">
+      <option value="all">All</option>
+      <option value="Debited">Debit</option>
+      <option value="Credited">Credit</option>
+    </select><br><br>
+    <label for="filter2"><b>Filter by:</b></label>
+    <select id="filter2" [(ngModel)]="filter2" (change)="applyFilter2()">
+      <option value="all">All</option>
+      <option value="Sowmya">Sowmya</option>
+      <option value="Sathiya">Sathiya</option>
+      <option value="Shiva">Shiva</option>
+    </select>
+  </div>
+  <!-- <div style="font-size:1.2em"><b>Current Balance : </b>{{bb[0].balance}}</div> -->
+<div class="container">
+    <h2 class="section-title">Transaction History</h2>
+    <table class="data-table" class="data-table" id="data-table" mat-table [dataSource]="dataSource" style="display: table;" matSort >
+        <!--<thead>
+            <tr class="table-header">
+                <th >ID</th>
+                <th >Date</th>
+                <th >Amount</th>
+                <th >Description</th>
+                <th >Account ID</th>
+                <th >Name</th>
+                <th >Balance</th>
+                <th >From/To Name</th>
+                <th >From/To Account ID</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr *ngFor="let transaction of transactions2">
+                <td>{{ transaction.tranid }}</td>
+                <td>{{ transaction.date | date: 'short' }}</td>
+                <td>{{ transaction.amount }}</td>
+                <td [ngClass]="{'green-text': transaction.description === 'Credited', 'red-text': transaction.description !== 'Credited'}">{{ transaction.description }}</td>
+                <td>{{ transaction.accId }}</td>
+                <td>{{ transaction.name }}</td>
+                <td>{{ transaction.balance }}</td>
+                <td>{{ transaction.recepientName}}</td>
+                <td>{{ transaction.raccId}}</td>
+            </tr>
+        </tbody>
+    </table>
+   
+</div>
+<mat-paginator [pageSizeOptions]="[3, 5, 10, 20,50]" showFirstLastButtons></mat-paginator>-->
+<!-- Header Definitions -->
+  <ng-container  matColumnDef="tranid">
+    <th  mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>
+    <td mat-cell *matCellDef="let transaction">{{ transaction.tranid }}</td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="date">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
+    <td mat-cell *matCellDef="let transaction">{{ transaction.date | date: 'short' }}</td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="amount">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount</th>
+    <td mat-cell *matCellDef="let transaction">{{ transaction.amount }}</td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Description</th>
+    <td mat-cell *matCellDef="let transaction" [ngClass]="{'green-text': transaction.description === 'Credited', 'red-text': transaction.description !== 'Credited'}">{{ transaction.description }}</td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="accId">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Account ID</th>
+    <td mat-cell *matCellDef="let transaction">{{ transaction.accId }}</td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+    <td mat-cell *matCellDef="let transaction">{{ transaction.name }}</td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="balance">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Balance</th>
+    <td mat-cell *matCellDef="let transaction">{{ transaction.balance }}</td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="recepientName">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>From/To Name</th>
+    <td mat-cell *matCellDef="let transaction">{{ transaction.recepientName }}</td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="raccId">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>From/To Account ID</th>
+    <td mat-cell *matCellDef="let transaction">{{ transaction.raccId }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+-->
+  <!--Row Definition -->
+ 
+
+</table>
+</div>
+
+<mat-paginator [pageSizeOptions]="[3, 5, 10, 20, 50]" showFirstLastButtons></mat-paginator>
+

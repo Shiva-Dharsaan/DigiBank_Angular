@@ -1,0 +1,153 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 632px;
+    background-image: url('https://cedaribsi.events/wp-content/uploads/2023/08/NextGen_Banking_GCC-2-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inner{
+  background-color: rgb(222, 230, 234);
+  padding-top:2%;
+  padding-bottom: 1%;
+  
+} 
+
+.c1 {
+    margin-left: 0%;
+    background-color: whitesmoke;
+    opacity:1;
+    width: 40%;
+    padding: 3%; 
+    padding-left: 5%;  
+    font-size: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-top: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.c1:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.c1 h2 {
+    color: rgb(0, 80, 112);
+    font-size: 1.5em; /* Increase the font size for a more prominent heading */
+ /* Add more space at the bottom */
+    text-align: center; /* Center-align the text */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.c1 p {
+    color: #555;
+    font-weight:bold;
+    font-size: 1.2em; /* Increase the font size for better readability */
+    line-height: 1; /* Increase line height for better spacing */
+    text-align: justify; /* Justify-align the text */
+}
+
+/* Add hover effect for better interactivity */
+.c1 h2:hover,
+.c1 p:hover {
+    color:red; /* Change color on hover */
+}
+
+.c1 button {
+    background-color: rgb(38, 94, 116);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.c1 button:hover {
+    background-color:black;
+}
+
+.c1 button + button {
+    margin-left: 10px;
+}
+
+.header {
+    background-color: rgb(0, 80, 112);
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40%;
+    height: 3%;
+}
+/*
+ button {
+    background-color: #4CAF50; /* Green background color 
+    color: white; /* White text color 
+    padding: 10px 20px; /* Padding for better readability and click area 
+    font-size: 16px; /* Font size 
+    border: none; /* Remove default border 
+    border-radius: 5px; /* Add rounded corners 
+    cursor: pointer; /* Change cursor on hover 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow 
+    transition: background-color 0.3s; /* Smooth transition for background color 
+  }
+
+  /* Change button background color on hover 
+  button:hover {
+    background-color:red; /* Darker green on hover 
+  }
+  /* app.component.css */
+
+  .home-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color:rosybrown; /* Dark blue background */
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effects */
+  }
+  
+  .home-icon:hover {
+    background-color:#DC143C; /* Darker blue on hover */
+    transform: scale(1.2);
+  }
+  header {
+    background-color:rgb(0, 80, 112);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-buttons {
+    display: flex;
+  }
+  .header-buttons button {
+    margin-left: 10px;
+    background-color: #4CAF50;;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .header-buttons button:hover {
+    background-color:red;
+  }
+
